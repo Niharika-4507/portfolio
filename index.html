@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika's portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(8, 43, 67);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(7, 54, 93);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style:none;
+            margin:0 23px ;
+        }
+         nav ul a{
+            text-decoration: none;
+            color: white;
+        }
+         nav ul a:hover{
+            color: palevioletred;
+         }
+        .firstsection{
+            min-height: 90vh;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            margin: 90x 0px;
+
+        }
+        .firstsection div{
+            line-height: 1.4;
+        }
+        .firstsection > div{
+            width: 30%; 
+        }
+        .leftsection{
+            /* background-color: red; */
+            font-size: 2.5rem;
+            margin: 80px 0px;
+            line-height: 1.8;
+            align-items: center;
+        }
+        .tagline{
+            font-size: 1.0rem;
+            color: azure;
+        }
+        .purple{
+            color: plum;
+        }
+        #element{
+            color: plum;
+         }
+         .educations{
+            font-size: large;
+            height: 250px;
+            color: azure;
+            width: 100%;
+            min-height: 100vh;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            line-height: 1.4;
+         }
+       
+         .skills {
+            margin-top: auto;
+            margin-bottom: 140px;
+            padding-bottom: 40px;
+            padding: 40px 0 230px;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+              align-items: center;
+             background:  rgb(8, 43, 67);
+             color: white;
+        }
+
+       .skills h2 {
+            font-size: 2.2rem;
+            margin-bottom: 60px;
+        }
+
+    /* timeline bar */
+        .timeline {
+            margin: 30px auto 0;
+             position: relative;
+             width: 70%;
+             height: 2px;
+             background: white;
+             display: flex;
+            justify-content: space-between;
+        }
+
+    /* each skill block */
+        .skill {
+             position: relative;
+             width: 30%;
+            text-align: center;
+            transform: translateY(40px);
+        }
+
+    /* vertical line */
+    .skill .line {
+         width: 2px;
+         height: 50px;
+         background: white;
+         margin: 0 auto 15px;
+    }
+
+    .skill h3 {
+         font-size: 1.1rem;
+         margin-bottom: 8px;
+    }
+
+    .skill p {
+         font-size: 0.9rem;
+         opacity: 0.9;
+    }
+    footer{
+        padding-top: 50px;
+        margin-top: 180px;
+        background-color:rgb(7, 54, 93);
+        height: 100px;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer a {
+        color: lightseagreens;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+         text-decoration: underline;
+    }
+    #contact a{
+      color: aliceblue;
+      text-decoration: none;
+    }
+    
+    #contact a:hover{
+        text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+  }
+
+  /* HOME SECTION */
+  .firstsection {
+    flex-direction: column;
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  .firstsection > div {
+    width: 90%;
+  }
+
+  .leftsection {
+    font-size: 1.8rem;
+    width: auto;
+    margin: 20px 0;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .rightsection img {
+    max-width: 260px;
+    margin-top: 20px;
+  }
+
+  /* EDUCATION */
+  .education {
+    padding: 40px 15px;
+  }
+
+  .education h2 {
+    font-size: 1.8rem;
+  }
+
+  /* SKILLS SECTION */
+  .skills {
+    padding: 40px 15px 120px;
+  }
+
+  .skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+
+  .skill {
+    width: 100%;
+    transform: none;
+    text-align: center;
+  }
+
+  .skill .line {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: auto;
+    margin-top: 60px;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Niharika's portfolio</div>
+            <div class="right">
+             <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#about"><li>about</a></li>
+                <li><a href="#contact"><li>Contact Me</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">
+                <div>Hi,My name is <span class="purple"> Niharika</span>
+                </div>
+                <p class="tagline">An aspiring student with enthusiasm to apply academic knowledge in real-world setting and gain valuable hands-on experience. Committed to contributing to the growth of the organization while seeking personal growth and development.</p>
+            </div>
+            <div class="rightsection">
+             <img src="bg.png" alt="">
+            </div>
+        </section>
+        <!-- <hr> -->
+         <section id="education" class="educations">
+            <h2>Education</h2>
+
+            <h3>Bachelor's of technology</h3>
+            <p>2024-2028</p>
+            <p>CGPA:9.2</p>
+
+            <h3>Intermediate</h3>
+            <p>2022-2024</p>
+            <p>percentage:97.0%</p>
+
+            <h3>Secondary School</h3>
+            <p>2021-2022</p>
+            <p>percentage:96%</p>
+         </section>
+        <section id="about" class="skills">
+        <h2>Technical Skills</h2>
+
+       <div class="timeline">
+        <div class="skill">
+           <div class="line"></div>
+              <h3>Programming Languages</h3>
+                <p>Java, Python, C</p>
+       </div>
+
+    <div class="skill">
+      <div class="line"></div>
+      <h3>Problem Solving</h3>
+      <p>Data Structures & Algorithms</p>
+    </div>
+
+    <div class="skill">
+      <div class="line"></div>
+      <h3>Frontend Development</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+  </div>
+</section>
+    </main>
+<footer id="contact">
+  <div class="footer-container">
+    <p>Email: <a href="mailto:chavaniharika04@gmail.com">chavaniharika04@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918522052246">+91 85220 52246</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/chava-niharika-383276324" target="_blank">linkedin.com/in/chava-niharika-383276325</a></p>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['web developer'],
+      typeSpeed: 50,
+    });
+  </script>
+    
+</body>
+</html>
