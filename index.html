@@ -3,336 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niharika's portfolio</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(8, 43, 67);
-            color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 90px;
-            background-color: rgb(7, 54, 93);
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style:none;
-            margin:0 23px ;
-        }
-         nav ul a{
-            text-decoration: none;
-            color: white;
-        }
-         nav ul a:hover{
-            color: palevioletred;
-         }
-        .firstsection{
-            min-height: 90vh;
-            align-items: center;
-            display: flex;
-            justify-content: space-around;
-            margin: 90x 0px;
-
-        }
-        .firstsection div{
-            line-height: 1.4;
-        }
-        .firstsection > div{
-            width: 30%; 
-        }
-        .leftsection{
-            /* background-color: red; */
-            font-size: 2.5rem;
-            margin: 80px 0px;
-            line-height: 1.8;
-            align-items: center;
-        }
-        .tagline{
-            font-size: 1.0rem;
-            color: azure;
-        }
-        .purple{
-            color: plum;
-        }
-        #element{
-            color: plum;
-         }
-         .educations{
-            font-size: large;
-            height: 250px;
-            color: azure;
-            width: 100%;
-            min-height: 100vh;
-            text-align: center;
-            align-content: center;
-            justify-content: center;
-            line-height: 1.4;
-         }
-       
-         .skills {
-            margin-top: auto;
-            margin-bottom: 140px;
-            padding-bottom: 40px;
-            padding: 40px 0 230px;
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-              align-items: center;
-             background:  rgb(8, 43, 67);
-             color: white;
-        }
-
-       .skills h2 {
-            font-size: 2.2rem;
-            margin-bottom: 60px;
-        }
-
-    /* timeline bar */
-        .timeline {
-            margin: 30px auto 0;
-             position: relative;
-             width: 70%;
-             height: 2px;
-             background: white;
-             display: flex;
-            justify-content: space-between;
-        }
-
-    /* each skill block */
-        .skill {
-             position: relative;
-             width: 30%;
-            text-align: center;
-            transform: translateY(40px);
-        }
-
-    /* vertical line */
-    .skill .line {
-         width: 2px;
-         height: 50px;
-         background: white;
-         margin: 0 auto 15px;
-    }
-
-    .skill h3 {
-         font-size: 1.1rem;
-         margin-bottom: 8px;
-    }
-
-    .skill p {
-         font-size: 0.9rem;
-         opacity: 0.9;
-    }
-    footer{
-        padding-top: 50px;
-        margin-top: 180px;
-        background-color:rgb(7, 54, 93);
-        height: 100px;
-        padding: 20px;
-        text-align: center;
-        font-family: Arial, sans-serif;
-    }
-
-    .footer a {
-        color: lightseagreens;
-        text-decoration: none;
-    }
-
-    .footer a:hover {
-         text-decoration: underline;
-    }
-    #contact a{
-      color: aliceblue;
-      text-decoration: none;
-    }
-    
-    #contact a:hover{
-        text-decoration: underline;
-    }
-    @media (max-width: 768px) {
-
-  /* NAVBAR */
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 15px 0;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-    padding-top: 10px;
-  }
-
-  /* HOME SECTION */
-  .firstsection {
-    flex-direction: column;
-    margin: 60px 0;
-    text-align: center;
-  }
-
-  .firstsection > div {
-    width: 90%;
-  }
-
-  .leftsection {
-    font-size: 1.8rem;
-    width: auto;
-    margin: 20px 0;
-  }
-
-  .tagline {
-    font-size: 0.95rem;
-  }
-
-  .rightsection img {
-    max-width: 260px;
-    margin-top: 20px;
-  }
-
-  /* EDUCATION */
-  .education {
-    padding: 40px 15px;
-  }
-
-  .education h2 {
-    font-size: 1.8rem;
-  }
-
-  /* SKILLS SECTION */
-  .skills {
-    padding: 40px 15px 120px;
-  }
-
-  .skills h2 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-  }
-
-  .timeline {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 40px;
-    display: flex;
-    flex-direction: column;
-    background: none;
-  }
-
-  .skill {
-    width: 100%;
-    transform: none;
-    text-align: center;
-  }
-
-  .skill .line {
-    height: 30px;
-    margin-bottom: 10px;
-  }
-
-  /* FOOTER */
-  footer {
-    height: auto;
-    margin-top: 60px;
-    padding: 20px 10px;
-    font-size: 0.9rem;
-  }
-}
-
-
-    </style>
+    <title>Niharika Chava | Software Developer Portfolio</title>
+    <meta name="description" content="Niharika Chava — B.Tech Computer Science student and aspiring software developer. Explore projects, skills and experience.">
+    <meta name="theme-color" content="#082B43">
+    <meta property="og:title" content="Niharika Chava | Software Developer Portfolio">
+    <meta property="og:description" content="Projects, skills and experience of Niharika Chava.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left">Niharika's portfolio</div>
-            <div class="right">
-             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#about"><li>about</a></li>
-                <li><a href="#contact"><li>Contact Me</a></li>
-            </ul>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#home" class="nav-logo">Niharika Chava</a>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </nav>
     </header>
+
     <main>
-        <section id="home" class="firstsection">
-            <div class="leftsection">
-                <div>Hi,My name is <span class="purple"> Niharika</span>
+        <!-- Hero Section -->
+        <section id="home" class="section hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge"><span class="status-dot"></span> B.Tech · 2024–2028 · Open to internships</span>
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Niharika <span>Chava.</span></h1>
+                    <h2 class="hero-title">Aspiring Software Developer</h2>
+                    <p class="hero-description">I enjoy turning ideas into useful applications. I work with Java, JavaScript and Python, and I'm currently exploring AI-powered systems and full-stack development.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                    <div class="hero-social-links" aria-label="Social links">
+                        <a href="https://github.com/Niharika-4507" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                        <a href="https://linkedin.com/in/chava-niharika-383276324" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    </div>
                 </div>
-                <p class="tagline">An aspiring student with enthusiasm to apply academic knowledge in real-world setting and gain valuable hands-on experience. Committed to contributing to the growth of the organization while seeking personal growth and development.</p>
-            </div>
-            <div class="rightsection">
-             <img src="bg.png" alt="">
+                <div class="hero-image">
+                    <img src="bg.png" alt="Illustration of a developer working at a desk with code on screen">
+                </div>
             </div>
         </section>
-        <!-- <hr> -->
-         <section id="education" class="educations">
-            <h2>Education</h2>
 
-            <h3>Bachelor's of technology</h3>
-            <p>2024-2028</p>
-            <p>CGPA:9.2</p>
+        <!-- About Section -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p>I'm a third-year B.Tech student interested in software development and building practical applications. I enjoy learning how different parts of an application work together — from the user interface to backend logic and data storage.</p>
+                    <p>I've built a Java-based Budget Tracker, and I'm currently developing an AI-powered traffic safety system. I also completed the Infosys Springboard Virtual Internship 7.0 in Angular Full Stack Development.</p>
+                    <p>I'm looking for opportunities to contribute to real products, learn from experienced developers and grow as a software engineer.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">9.26</span>
+                        <span class="highlight-label">CGPA</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">2</span>
+                        <span class="highlight-label">Projects</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">1</span>
+                        <span class="highlight-label">Internship</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h3>Intermediate</h3>
-            <p>2022-2024</p>
-            <p>percentage:97.0%</p>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3 class="card-title">Bachelor of Technology</h3>
+                        <p class="card-subtitle">Computer Science</p>
+                        <p class="card-detail">Vignan’s Lara Institute of Technology and Science</p>
+                        <p class="card-detail">2024 – 2028</p>
+                        <p class="card-highlight">CGPA: 9.26</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Intermediate (XII)</h3>
+                        <p class="card-detail">2022 – 2024</p>
+                        <p class="card-highlight">Percentage: 97.6%</p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Secondary School (X)</h3>
+                        <p class="card-subtitle">SSC</p>
+                        <p class="card-detail">2021 – 2022</p>
+                        <p class="card-highlight">Percentage: 96%</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            <h3>Secondary School</h3>
-            <p>2021-2022</p>
-            <p>percentage:96%</p>
-         </section>
-        <section id="about" class="skills">
-        <h2>Technical Skills</h2>
+        <!-- Skills Section -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <article class="card">
+                        <h3 class="card-title">Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Frontend Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React (Basics)</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Backend Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java HttpServer</span>
+                            <span class="skill-tag">REST API Development</span>
+                            <span class="skill-tag">Fetch API Integration</span>
+                            <span class="skill-tag">FastAPI (Project Experience)</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">SQLAlchemy (Project Experience)</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Tools &amp; Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-title">Core Concepts</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">DBMS</span>
+                            <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-       <div class="timeline">
-        <div class="skill">
-           <div class="line"></div>
-              <h3>Programming Languages</h3>
-                <p>Java, Python, C</p>
-       </div>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <article class="card project-card project-card-featured">
+                        <div class="project-card-topline">
+                            <span class="featured-label">Major project · In progress</span>
+                            <span class="project-status"><span class="status-dot"></span> Ongoing</span>
+                        </div>
+                        <h3 class="featured-project-title">AI-Powered Intelligent Traffic Safety &amp; Incident Response System</h3>
+                        <p class="project-description">Developing a system that analyses traffic-camera videos to identify potential road accidents and support incident management through a centralized dashboard.</p>
+                        <div class="project-features">
+                            <h4 class="project-features-title">Work completed so far</h4>
+                            <ul class="project-features-list">
+                                <li>Integrated a YOLOv8 model for accident detection from video footage</li>
+                                <li>Implemented time-based temporal validation to improve detection reliability</li>
+                                <li>Built FastAPI and SQLite backend components for camera and incident records</li>
+                                <li>Created initial dashboard interfaces for camera and incident monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">YOLOv8</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">SQLAlchemy</span>
+                        </div>
+                        <p class="project-note">Two-person academic project · Development ongoing</p>
+                    </article>
 
-    <div class="skill">
-      <div class="line"></div>
-      <h3>Problem Solving</h3>
-      <p>Data Structures & Algorithms</p>
-    </div>
+                    <article class="card project-card">
+                        <span class="featured-label">Personal project</span>
+                        <h3 class="featured-project-title">Budget Tracker Web Application</h3>
+                        <p class="project-description">A personal finance tracker built with a Java HTTP server and SQLite database. It supports transaction management and presents spending information through an interactive dashboard.</p>
+                        <div class="project-features">
+                            <h4 class="project-features-title">Key features</h4>
+                            <ul class="project-features-list">
+                                <li>Add and update income and expense transactions</li>
+                                <li>REST APIs using Java HttpServer</li>
+                                <li>Persistent data storage with SQLite</li>
+                                <li>Dashboard summaries and Chart.js visualizations</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="skill-tags">
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">SQLite</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Chart.js</span>
+                            </div>
+                            <a href="https://github.com/Niharika-4507/budget-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                View on GitHub <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <div class="skill">
-      <div class="line"></div>
-      <h3>Frontend Development</h3>
-      <p>HTML, CSS, JavaScript</p>
-    </div>
-  </div>
-</section>
+        <!-- Experience Section -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <article class="card experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="card-title">Infosys Springboard Virtual Internship 7.0</h3>
+                            <p class="experience-role">Angular Full Stack Developer</p>
+                        </div>
+                        <span class="experience-duration">June – August 2026 · 8 weeks</span>
+                    </div>
+                    <p class="experience-description">Completed an 8-week virtual internship focused on Angular full-stack development. As part of the internship, I worked with a team on a Construction Site Monitoring System and gained practical experience with project milestones, application development and collaborative workflows.</p>
+                    <div class="internship-project">
+                        <span class="internship-project-label">Internship team project</span>
+                        <h4>Construction Site Monitoring System (BuildTrack)</h4>
+                        <p>Built collaboratively as part of the Infosys Springboard Virtual Internship 7.0. This is presented under internship experience as a team project, not as an independent personal project.</p>
+                        <div class="internship-project-links">
+                            <a href="https://github.com/springboardmentor17200c-beep/BuildTrack-Batch2" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View GitHub Repository <span aria-hidden="true">↗</span></a>
+                            <a href="https://build-track-vrqn.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Live Demo <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                    <div class="experience-topics">
+                        <h4 class="experience-topics-title">Areas of Exposure</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Frontend Development</span>
+                            <span class="skill-tag">Backend Concepts</span>
+                            <span class="skill-tag">REST API Integration</span>
+                            <span class="skill-tag">Git Workflows</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cards-grid cards-grid-2">
+                    <article class="card cert-card">
+                        <h3 class="card-title">Java Programming</h3>
+                        <p class="card-subtitle">NPTEL</p>
+                    </article>
+                    <article class="card cert-card">
+                        <h3 class="card-title">Database Management Systems</h3>
+                        <p class="card-subtitle">NPTEL</p>
+                    </article>
+                    <article class="card cert-card">
+                        <h3 class="card-title">Java Programming</h3>
+                        <p class="card-subtitle">Infosys Springboard</p>
+                    </article>
+                    <article class="card cert-card">
+                        <h3 class="card-title">Python Essentials 1</h3>
+                        <p class="card-subtitle">Cisco</p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
-<footer id="contact">
-  <div class="footer-container">
-    <p>Email: <a href="mailto:chavaniharika04@gmail.com">chavaniharika04@gmail.com</a></p>
-    <p>Phone: <a href="tel:+918522052246">+91 85220 52246</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/chava-niharika-383276324" target="_blank">linkedin.com/in/chava-niharika-383276325</a></p>
-  </div>
-</footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-      <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['web developer'],
-      typeSpeed: 50,
-    });
-  </script>
-    
+    <!-- Contact / Footer -->
+    <footer id="contact" class="section section-alt footer">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">I'm open to software development internship opportunities and collaborative projects. Feel free to connect.</p>
+            <div class="contact-links">
+                <a href="mailto:chavaniharika07@gmail.com" class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span>chavaniharika07@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/chava-niharika-383276324" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/Niharika-4507" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
+            <p class="footer-text">&copy; 2026 Niharika Chava. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
